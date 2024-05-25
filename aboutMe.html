@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-US">
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+  </head>
+  <body>
+    As a Master of Computing graduate from the Australian National University
+    (ANU), I am passionate about front-end development, data analysis, and
+    project management. I bring a proven track record from collaborations with
+    esteemed organizations like PwC, Scyne Advisory, along with strong
+    communication and problem-solving skills. I want to contribute innovative
+    solutions to the tech industry, bridging gaps between technology and users,
+    and fostering efficient, multilingual communication.
+
+    <table>
+      <caption>
+        My Education History
+      </caption>
+      <tr>
+        <th>University</th>
+        <th>Major</th>
+        <th>Time</th>
+        <th>Specialisation</th>
+      </tr>
+
+      <tr>
+        <td>ANU</td>
+        <td>Master of Computing</td>
+        <td>2021-2023</td>
+        <td>Professioanl Computing</td>
+      </tr>
+
+      <tr>
+        <td>ANU</td>
+        <td>Bachelor of Finance</td>
+        <td>2019-2022</td>
+        <td>Asian Capital Market</td>
+      </tr>
+    </table>
+
+    <form action="/cats">
+      <p>
+        <!-- name is identical to ensure user can only select one option -->
+        <input type="radio" name="level" id="high" value="love" />
+        <label for="high">Love it!</label>
+        <input type="radio" name="level" id="medium" value="soso" />
+        <label for="medium">Just so so</label>
+        <input type="radio" name="level" id="low" value="nah" />
+        <label for="low">Nah</label>
+      </p>
+      <button type="submit">Submit</button>
+
+      <p>
+        <label for="food">Please select your favorite food</label>
+        <select name="food" id="food">
+          <option value="defualt">Please choose your option</option>
+          <option value="chicken">Chicken Breast</option>
+          <option value="steak">Steak</option>
+          <option value="pork">Pork</option>
+        </select>
+        <button type="submit">Submit</button>
+      </p>
+
+      <p>
+        <label for="amount">Amount of cheese: </label>
+        <input
+          type="range"
+          name="cheese_level"
+          id="amount"
+          min="1"
+          max="50"
+          value="25"
+        />
+      </p>
+
+      <p>
+        <lable for="num">Enter a number: </lable>
+        <input
+          type="number"
+          name="total_num"
+          id="num"
+          min="1"
+          max="10"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="txt">Please leave your comment: </label>
+        <textarea
+          id="txt"
+          rows="10"
+          cols="10"
+          placeholder="Start here"
+          name="requests"
+        ></textarea>
+      </p>
+    </form>
+  </body>
+</html>

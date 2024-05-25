@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Page</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="experience.html">Working Experience</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- create a search bar by using form -->
+      <!-- element: input (20+ types) -->
+      <form action="https://www.google.com.au/search?q=">
+        <p>
+          <label for="search">Search Your Ideas</label>
+          <input id="search" type="text" placeholder="Search here" name="q" />
+          <button type="submit">Search</button>
+        </p>
+
+        <p>
+          <label for="checkbox">Tick</label>
+          <input id="checkbox" type="checkbox" />
+        </p>
+      </form>
+      <section id="notes">
+        <h1>Notes</h1>
+        <!-- ol:ordered list, ul:unordered list -->
+        <ol>
+          <li>
+            A <b>doctype</b>informs the browser of the type of markup it should
+            expect.
+          </li>
+          <li>
+            <b>Inline vs. Block Elements</b>
+            <ul>
+              <li>
+                Inline: alongside <sup><a href="dssda.com">[1]</a></sup>
+              </li>
+              <li>Block: take the whole space</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <div id="links">
+        <h1>Learning Resources</h1>
+        <ul>
+          <li>
+            MDN - Web Development:
+            <!-- <a></a> attribute href -->
+            <a href="https://developer.mozilla.org/en-US/"
+              >https://developer.mozilla.org/en-US/</a
+            >
+          </li>
+          <li>
+            HTML Spec:
+            <a href="https://html.spec.whatwg.org"
+              >https://html.spec.whatwg.org</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="tips">
+        <h1>VSCode Tips</h1>
+        <ul>
+          <li>
+            Formatting your code
+            <ol>
+              <li>Click: Settings</li>
+              <li>Search "Format"</li>
+              <li>Tick "format on save"</li>
+            </ol>
+          </li>
+          <li>Emmet: <a href="https://emmet.io">https://emmet.io</a></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
