@@ -1,8 +1,62 @@
-h1{
-    color: blueviolet;
-    background-color: #80ced6;
+body {
+    background-color: #ffffff;
 }
 
-body {
-    background-color: hsla(89, 43%, 51%, 0.3);
+h1{
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 40px;
 }
+
+/* adjacent selector: immediate sibling */
+/* h1 + ol{
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 40px;
+} */
+
+/* direct descendant */
+/* #notes > ol {
+    color: pink;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 40px;
+} */
+
+button:hover{
+    background-color: #90e0ef;
+    cursor: pointer;
+}
+
+input{
+    color: pink;
+}
+
+input[type="text"] {
+    color: green;
+}
+
+.first::after{
+    content: "good";
+    color: green;
+}
+
+.second::before{
+    content: "good";
+    color: darkorange;
+}
+
+p::selection{
+    background-color: black;
+    color: white;
+}
+
+::spelling-error{
+    text-decoration: wavy red underline;
+}
+

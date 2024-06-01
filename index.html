@@ -18,15 +18,20 @@
       <!-- create a search bar by using form -->
       <!-- element: input (20+ types) -->
       <form action="https://www.google.com.au/search?q=">
-        <p>
+        <p class="first">
           <label for="search">Search Your Ideas</label>
           <input id="search" type="text" placeholder="Search here" name="q" />
-          <button type="submit">Search</button>
+          <button type="submit" id="search">Search</button>
         </p>
 
-        <p>
+        <p class="second">
           <label for="checkbox">Tick</label>
           <input id="checkbox" type="checkbox" />
+        </p>
+
+        <p contenteditable spellcheck="true">
+          Please select specific words to see the pseudo elements::selection.
+          some errrrros
         </p>
       </form>
       <section id="notes">
